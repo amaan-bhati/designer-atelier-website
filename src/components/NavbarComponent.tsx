@@ -7,8 +7,7 @@ export function NavbarComponent() {
   return (
     <div className="relative w-full flex items-center justify-center">
       <Navbar className="top-2" />
-     
-    </div>
+ </div>
   );
 }
 
@@ -21,10 +20,10 @@ function Navbar({ className }: { className?: string }) {
       <Menu setActive={setActive}>
         <MenuItem setActive={setActive} active={active} item="Services">
           <div className="flex flex-col space-y-4 text-sm">
-            <HoveredLink href="/web-dev">Web Development</HoveredLink>
-            <HoveredLink href="/interface-design">Interface Design</HoveredLink>
-            <HoveredLink href="/seo">Search Engine Optimization</HoveredLink>
-            <HoveredLink href="/branding">Branding</HoveredLink>
+            <HoveredLink href="/web-dev">Fashion Designing</HoveredLink>
+            <HoveredLink href="/interface-design">Suits and Dresses</HoveredLink>
+            <HoveredLink href="/seo">Makeup Bags</HoveredLink>
+            <HoveredLink href="/branding">Tote Bags</HoveredLink>
           </div>
         </MenuItem>
         <MenuItem setActive={setActive} active={active} item="Products">
@@ -55,12 +54,12 @@ function Navbar({ className }: { className?: string }) {
             />
           </div>
         </MenuItem>
-        <MenuItem setActive={setActive} active={active} item="Pricing">
+        <MenuItem setActive={setActive} active={active} item="Info">
           <div className="flex flex-col space-y-4 text-sm">
-            <HoveredLink href="/hobby">Hobby</HoveredLink>
-            <HoveredLink href="/individual">Individual</HoveredLink>
-            <HoveredLink href="/team">Team</HoveredLink>
-            <HoveredLink href="/enterprise">Enterprise</HoveredLink>
+            <HoveredLink href="/hobby">About Page</HoveredLink>
+            <HoveredLink href="/individual">About Products</HoveredLink>
+            <HoveredLink href="/team">Delivery and Pricing</HoveredLink>
+            <HoveredLink href="/enterprise">Terms & Conditions</HoveredLink>
           </div>
         </MenuItem>
       </Menu>
