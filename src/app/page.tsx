@@ -1,8 +1,18 @@
+import { AboutSection } from "@/components/AboutSection";
+import { AuroraBackgroundDemo } from "@/components/AuroraBackgroundDemo";
 import { NavbarComponent } from "@/components/NavbarComponent";
-import Image from "next/image";
+import { AuroraBackground } from "@/components/ui/aurora-background";
+// import Image from "next/image";
 
 export default function Home() {
   return (
- <NavbarComponent/>
+    <>
+      <NavbarComponent />
+      <AuroraBackgroundDemo/>
+      <AboutSection />
+      
+
+
+    </>
   );
 }
